@@ -6,8 +6,8 @@ from django.http import HttpResponse
 def hello(request):
     return HttpResponse('Hello, hello, world!')
 
-def hello(request, variabila):
-    return HttpResponse('Hello, hello,{variabila} world!')
+def hello(request, var):
+    return HttpResponse('Hello, hello,{var} world!')
 """
 def hello(request):
     s = request.GET.get('s', '')
